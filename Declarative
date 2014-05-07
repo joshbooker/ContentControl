@@ -1,0 +1,8 @@
+myapp.AddEditCustomer.Customer2_render = function (element, contentItem) {
+    // Write code here.
+    thatTemplate = '<div class="subControl" control="TextBox" data-ls-text="text:{data.ContactName}"></div>';
+    thatControl = new msls.ui.controls.ContentControl($(element));
+    thatControl.dataTemplate = thatTemplate;
+    thatControl.data = contentItem.data;
+    thatControl.render();
+};
